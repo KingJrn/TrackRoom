@@ -70,6 +70,11 @@ const router = createRouter({
       name: '/messages',
       component: () => import('../student/Messages.vue')
     },
+    {
+      path: '/calendar',
+      name: '/calendar',
+      component: () => import('../student/Calendar.vue')
+    },
 
 
 

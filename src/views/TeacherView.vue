@@ -1,12 +1,30 @@
 <script>
+import ClassInfo from '../student/components/ClassInfo.vue';
+
 export default {
     name: "teacher",
+    components: {
+        ClassInfo,
+    },
+    data() {
+        return {
+            tab: '',
+            teacher: true
+        }
+    },
+    methods: {
+        openClassInfo() {
+            this.tab = 'class'
+            this.teacher = false;
+        }
+    }
 }
 </script>
 
 <template>
     <!-- top navigation -->
-    <main>
+
+    <main v-if="teacher">
         <div class="nav_guard">
             <i class="bi bi-arrow-left" @click="goBack"></i>
             <div class="date">
@@ -15,7 +33,7 @@ export default {
                     <option value="2">2022-2023</option>
                 </select>
             </div>
-            <div class="page_title">My Classes</div>
+            <div class="page_title" @click="openClassInfo">JavaScript</div>
         </div>
         <div class="nav-tab">
             <div class="nav-tabs">
@@ -75,8 +93,13 @@ export default {
                 </RouterLink>
                 <i class="bi bi-chevron-right"></i>
             </div>
-
-
+            <div class="nav-tabs">
+                <RouterLink to="/calendar">
+                    <i class="bi bi-calendar text-light"></i>
+                    <span class="ms-3">Calendar</span>
+                </RouterLink>
+                <i class="bi bi-chevron-right"></i>
+            </div>
         </div>
 
         <!-- bottom navigation -->
@@ -101,9 +124,12 @@ export default {
             </div>
 
         </div>
+
     </main>
+    <ClassInfo v-if="tab === 'class'" />
 </template>
 
-<style scoped>
+<style scoped> 
+
 @media (min-width: 1024px) {}
 </style>

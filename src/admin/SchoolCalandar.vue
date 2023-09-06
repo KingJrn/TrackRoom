@@ -17,7 +17,7 @@ export default {
         </div>
         <div class="nav-tab">
             <div class="nav-tabs">
-                <RouterLink to="/timedactivity">
+                <RouterLink to="/schoolcalandar">
                     <div class="course-title fs-4 text-light-emphasis">JavaScript</div>
                     <div class="fst-italic">Basic to programming</div>
                     <div class="fs-6 fw-lighter text-white">Wisdom</div>
@@ -28,7 +28,7 @@ export default {
                 <i class="bi bi-chevron-right"></i>
             </div>
             <div class="nav-tabs">
-                <RouterLink to="/timedactivity">
+                <RouterLink to="/schoolcalandar">
                     <div class="course-title fs-4 text-light-emphasis">JavaScript</div>
                     <div class="fst-italic">Introduction to HTML</div>
                     <div class="fs-6 fw-lighter text-white">Abaz</div>

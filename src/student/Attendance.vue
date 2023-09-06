@@ -22,7 +22,7 @@ export default {
                     <div class="fs-6 fw-lighter text-white">emmajr502@gmail.com</div>
                 </RouterLink>
                 <!-- present -->
-                <i class="bi bi-check-lg"></i>
+                <i class="bi bi-check-lg text-success"></i>
                 <i class="bi bi-chevron-right"></i>
             </div>
             <div class="nav-tabs">
@@ -31,7 +31,7 @@ export default {
                     <div class="fs-6 fw-lighter text-white">emmajr502@yahoo.com</div>
                 </RouterLink>
                 <!-- absent -->
-                <i class="bi bi-x-lg"></i>
+                <i class="bi bi-x-lg text-danger"></i>
                 <i class="bi bi-chevron-right"></i>
             </div>
             <div class="mt-3 ">

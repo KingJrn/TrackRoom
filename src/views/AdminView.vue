@@ -28,11 +28,11 @@ export default {
             </div>
             <div class="teachers">Teachers</div>
             <div class="nav-tabs">
-                <RouterLink to="/">Name 1</RouterLink>
+                <RouterLink to="/teacher">Name 1</RouterLink>
                 <i class="bi bi-chevron-right"></i>
             </div>
             <div class="nav-tabs">
-                <RouterLink to="/">Name 2</RouterLink>
+                <RouterLink to="/teacher">Name 2</RouterLink>
                 <i class="bi bi-chevron-right"></i>
             </div>
         </div>
@@ -42,7 +42,6 @@ export default {
             <div class="d-flex flex-column justify-center align-items-center">
                 <i class="bi bi-person"></i>
                 <RouterLink to="/">My account</RouterLink>
-
 
             </div>
 

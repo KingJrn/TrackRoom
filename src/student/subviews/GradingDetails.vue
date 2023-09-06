@@ -1,6 +1,7 @@
 <script>
 export default {
-    name: 'gradingDetails'
+    name: 'gradingDetails',
+
 }
 </script>
 
