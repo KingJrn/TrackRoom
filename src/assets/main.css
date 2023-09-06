@@ -1,4 +1,4 @@
-@import "./base.css";
+@import './base.css';
 
 #app {
   max-width: 1280px;
@@ -14,6 +14,12 @@ a,
   text-decoration: none !important;
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s !important;
+}
+
+/* Light mode styles */
+.light-mode {
+  background-color: #fff;
+  color: #333;
 }
 /* General styles for the Main components */
 
@@ -35,6 +41,10 @@ main {
   justify-content: space-around;
   align-items: center;
 }
+.nav_top {
+  position: relative;
+  width: auto;
+}
 
 .date {
   display: flex;
@@ -53,14 +63,17 @@ i:hover {
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s !important;
 }
+input {
+  font-size: 15px !important;
+}
 
 .nav-tabs {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-block: .8rem;
-  border-color:rgba(235, 235, 235, 0.151);
+  padding-block: 0.8rem;
+  border-color: rgba(235, 235, 235, 0.151);
 }
 
 .nav-tabs a {
@@ -84,5 +97,46 @@ i:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
+  }
+}
+
+/* for login and signUp screens */
+
+/* Apply styles starting from medium devices and up to extra large devices */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .login_form {
+    margin: auto;
+  }
+}
+@media (max-width: 992px) {
+  main {
+    justify-content: flex-start;
+  }
+  .nav_top {
+    margin-top: 1rem;
+  }
+  .note_comment{
+    margin-top: 4rem;
+  }
+  .message{
+    margin-top: 4rem;
+  }
+  .nav-tab {
+    padding-bottom: 4rem;
+  }
+  .nav_footer {
+    position: fixed;
+    bottom: 0px;
+    width: 94%;
+  }
+}
+
+/* md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .login_form {
+    width: 100% !important;
+  }
+  .nav_footer {
+    width: 84%;
   }
 }

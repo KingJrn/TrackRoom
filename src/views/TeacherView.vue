@@ -24,7 +24,7 @@ export default {
 <template>
     <!-- top navigation -->
 
-    <main v-if="teacher">
+    <main v-if="teacher" class="nav_top">
         <div class="nav_guard">
             <i class="bi bi-arrow-left" @click="goBack"></i>
             <div class="date">
@@ -104,7 +104,7 @@ export default {
 
         <!-- bottom navigation -->
 
-        <div class="nav_guard">
+        <div class="nav_guard nav_footer">
             <div class="d-flex flex-column justify-center align-items-center">
                 <i class="bi bi-person"></i>
                 <RouterLink to="/">My account</RouterLink>
@@ -129,7 +129,5 @@ export default {
     <ClassInfo v-if="tab === 'class'" />
 </template>
 
-<style scoped> 
-
-@media (min-width: 1024px) {}
+<style scoped> @media (min-width: 1024px) {}
 </style>

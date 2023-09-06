@@ -6,8 +6,8 @@ export default {
 
 <template>
     <!-- top navigation -->
-    <main>
-        <div class="nav_guard">
+    <main class="nav_top">
+        <div class="nav_guard ">
             <i class="bi bi-arrow-left" @click="goBack"></i>
             <div class="date">
                 <select class="form-select" aria-label="select example">
@@ -36,7 +36,7 @@ export default {
         </div>
 
         <!-- bottom navigation -->
-        <div class="nav_guard">
+        <div class="nav_guard nav_footer">
             <div class="d-flex flex-column justify-center align-items-center">
                 <i class="bi bi-sort-alpha-down"></i>
                 <RouterLink to="/">Sort</RouterLink>
@@ -65,5 +65,12 @@ export default {
 </template>
 
 <style scoped>
-@media (min-width: 1024px) {}
+@media (max-width: 576px) {
+    .nav_footer a{
+        font-size: 10px;
+    }
+    .nav_footer i{
+        font-size: 1.5rem ;
+    }
+}
 </style>

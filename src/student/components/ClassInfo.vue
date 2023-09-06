@@ -11,13 +11,13 @@ export default {
 
 <template>
     <!-- top navigation -->
-    <main>
+    <main class="nav_top">
         <div class="nav_guard">
             <i class="bi bi-arrow-left" @click="goBackTeacher"></i>
 
             <div class="page_title">CLass Info</div>
         </div>
-        <form class="w-75 mt-3">
+        <form class="w-75 mt-3 login_form">
             <div class="mb-3 w-100">
                 <label for="exampleInputEmail1" class="form-label">Class name</label>
                 <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" />
@@ -39,7 +39,7 @@ export default {
         </form>
 
         <!-- bottom navigation -->
-        <div class="nav_guard">
+        <div class="nav_guard nav_footer">
             <div class="d-flex flex-column justify-center align-items-center">
                 <i class="bi bi-gear"></i>
                 <RouterLink to="/">Settings</RouterLink>

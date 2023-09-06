@@ -1,7 +1,7 @@
 
 <template>
   <div class="about">
-    <form class="w-75">
+    <form class="w-75 login_form">
       <div class="mb-3 w-100">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
         <input
@@ -29,6 +29,7 @@
   }
 </script>
 <style>
+
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;

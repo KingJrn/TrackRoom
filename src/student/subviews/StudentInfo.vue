@@ -7,7 +7,7 @@ export default {
 <template>
     <!-- top navigation -->
     <main>
-        <div class="nav_guard">
+        <div class="nav_guard nav_top">
             <i class="bi bi-arrow-left" @click="goBack"></i>
             <div class="date">
                 <select class="form-select" aria-label="select example">
@@ -17,7 +17,7 @@ export default {
             </div>
             <div class="page_title">Student Info</div>
         </div>
-        <form class="w-75 mt-3">
+        <form class="w-75 mt-3 mb-5 login_form ">
             <div class="mb-3 w-100">
                 <label for="exampleInputEmail1" class="form-label">First name</label>
                 <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" />
@@ -42,18 +42,13 @@ export default {
         </form>
 
         <!-- bottom navigation -->
-        <div class="nav_guard">
+        <div class="nav_guard nav_footer">
             <div class="d-flex flex-column justify-center align-items-center">
                 <i class="bi bi-gear"></i>
                 <RouterLink to="/">Settings</RouterLink>
 
             </div>
 
-            <div class="d-flex flex-column justify-center align-items-center">
-                <i class="bi bi-dash-circle"></i>
-                <RouterLink to="/">Deactivate students student</RouterLink>
-
-            </div>
             <div class="d-flex flex-column justify-center align-items-center">
                 <i class="bi bi-x-circle-fill"></i>
                 <RouterLink to="/">Delete student</RouterLink>
@@ -70,5 +65,13 @@ export default {
 </template>
 
 <style scoped>
-@media (min-width: 1024px) {}
+@media (max-width: 576px) {
+    .nav_footer a {
+        font-size: px;
+    }
+
+    .nav_footer i {
+        font-size: 1.5rem;
+    }
+}
 </style>

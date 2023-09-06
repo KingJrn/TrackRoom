@@ -9,12 +9,12 @@ import HelloWorld from './student/HelloWorld.vue'
       <HelloWorld msg="TrackRoom" />
 
       <nav v-if="false">
-        <RouterLink to="/">Login</RouterLink>
-        <RouterLink to="/signup">Sign up</RouterLink>
+        <RouterLink to="/"><h6>Login</h6></RouterLink>
+        <RouterLink to="/signup"><h6>Sign up</h6></RouterLink>
       </nav>
       <nav v-if="true">
-        <RouterLink to="/admin">Administrators</RouterLink>
-        <RouterLink to="/teacher">Teacher</RouterLink>
+        <RouterLink to="/admin"><h6>Administrators</h6></RouterLink>
+        <RouterLink to="/teacher"><h6>Teacher</h6></RouterLink>
       </nav>
     </div>
   </header>

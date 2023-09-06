@@ -6,7 +6,7 @@ export default {
 
 <template>
     <!-- top navigation -->
-    <main>
+    <main class="nav_top">
         <div class="nav_guard">
             <i class="bi bi-arrow-left" @click="goBack"></i>
             <div class="date">
@@ -45,7 +45,7 @@ export default {
         </div>
 
         <!-- bottom navigation -->
-        <div class="nav_guard">
+        <div class="nav_guard nav_footer">
             <div class="d-flex flex-column justify-center align-items-center">
                 <i class="bi bi-slash-circle"></i>
                 <RouterLink to="/">Clear all</RouterLink>
@@ -63,5 +63,4 @@ export default {
 </template>
 
 <style scoped>
-@media (min-width: 1024px) {}
 </style>

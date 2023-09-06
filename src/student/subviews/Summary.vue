@@ -6,8 +6,8 @@ export default {
 
 <template>
     <!-- top navigation -->
-    <main class="pt-4 overflow-auto">
-        <div class="nav_guard">
+    <main class="pt-4 ">
+        <div class="nav_guard py-3">
             <i class="bi bi-arrow-left" @click="goBack"></i>
             <div class="date">
 
@@ -82,10 +82,10 @@ export default {
                     <span class=" fs-6">Total</span>
                 </div>
                 <!-- point counter-->
-                <div class="d-flex flex-row w-25 justify-content-around align-items-center">
+                <div class="d-flex flex-row justify-content-around align-items-center w-auto">
                     <span class="b_point text-bg-success text-center text-white">30</span>
-                    <span class="b_point text-bg-danger text-center text-white">-6</span>
-                    <i class="bi bi-chevron-right"></i>
+                    <span class="b_point text-bg-danger text-center text-white ms-3">-6</span>
+                    <i class="bi bi-chevron-right ms-3"></i>
 
                 </div>
             </div>
@@ -95,10 +95,10 @@ export default {
                     <span class=" fs-6">Teamwork</span>
                 </div>
                 <!-- point counter-->
-                <div class="d-flex flex-row w-25 justify-content-around align-items-center">
+                <div class="d-flex flex-row w-auto justify-content-around align-items-center">
                     <span class="b_point text-bg-success text-center text-white">30</span>
-                    <span class="b_point text-bg-danger text-center text-white">-6</span>
-                    <i class="bi bi-chevron-right"></i>
+                    <span class="b_point text-bg-danger text-center text-white  ms-3">-6</span>
+                    <i class="bi bi-chevron-right ms-3"></i>
 
                 </div>
             </div>
@@ -108,10 +108,10 @@ export default {
                     <span class=" fs-6">Persistance</span>
                 </div>
                 <!-- point counter-->
-                <div class="d-flex flex-row w-25 justify-content-around align-items-center">
+                <div class="d-flex flex-row w-auto justify-content-around align-items-center">
                     <span class="b_point text-bg-success text-center text-white">30</span>
-                    <span class="b_point text-bg-danger text-center text-white">-6</span>
-                    <i class="bi bi-chevron-right"></i>
+                    <span class="b_point text-bg-danger text-center text-white  ms-3">-6</span>
+                    <i class="bi bi-chevron-right ms-3"></i>
                 </div>
 
             </div>
@@ -121,10 +121,10 @@ export default {
                     <span class=" fs-6">Preparedness</span>
                 </div>
                 <!-- point counter-->
-                <div class="d-flex flex-row w-25 justify-content-around align-items-center">
+                <div class="d-flex flex-row w-auto justify-content-around align-items-center">
                     <span class="b_point text-bg-success text-center text-white">30</span>
-                    <span class="b_point text-bg-danger text-center text-white">-6</span>
-                    <i class="bi bi-chevron-right"></i>
+                    <span class="b_point text-bg-danger text-center text-white  ms-3">-6</span>
+                    <i class="bi bi-chevron-right ms-3"></i>
                 </div>
 
             </div>
@@ -134,10 +134,10 @@ export default {
                     <span class=" fs-6">Follows instructions</span>
                 </div>
                 <!-- point counter-->
-                <div class="d-flex flex-row w-25 justify-content-around align-items-center">
+                <div class="d-flex flex-row w-auto justify-content-around align-items-center">
                     <span class="b_point text-bg-success text-center text-white">30</span>
-                    <span class="b_point text-bg-danger text-center text-white">-6</span>
-                    <i class="bi bi-chevron-right"></i>
+                    <span class="b_point text-bg-danger text-center text-white ms-3">-6</span>
+                    <i class="bi bi-chevron-right  ms-3"></i>
                 </div>
 
             </div>
@@ -203,7 +203,7 @@ export default {
 
 
         <!-- bottom navigation -->
-        <div class="nav_guard">
+        <div class="nav_guard nav_footer">
             <div class="d-flex flex-column justify-center align-items-center">
                 <i class="bi bi-filetype-csv"></i>
                 <RouterLink to="/">Export CSV</RouterLink>
@@ -220,6 +220,9 @@ export default {
 </template>
 
 <style scoped>
+main{
+    overflow-y: scroll;
+}
 .b_point {
     width: 40px;
     height: 40px;
@@ -230,7 +233,14 @@ export default {
     border-radius: 100%;
 }
 
-
-
-@media (min-width: 1024px) {}
+/* md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 992px) {
+    main{
+        overflow: visible;
+    }
+    .b_point{
+        width: 30px;
+        height: 30px;
+    }
+}
 </style>

@@ -6,7 +6,7 @@ export default {
 
 <template>
     <!-- top navigation -->
-    <main class="justify-content-center">
+    <main class="justify-content-center nav_top">
         <div class="nav_guard mb-5">
             <i class="bi bi-arrow-left" @click="goBack"></i>
             <div class="date">
@@ -23,7 +23,7 @@ export default {
         </div>
 
         <!-- Set Event From  -->
-        <form class="w-75 mt-3" >
+        <form class="w-75 mt-3 login_form" >
             <div class="mb-3 w-100">
                 <label for="exampleInputEmail1" class="form-label">Class</label>
                 <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" />

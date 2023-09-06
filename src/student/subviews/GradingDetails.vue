@@ -7,7 +7,7 @@ export default {
 
 <template>
     <!-- top navigation -->
-    <main>
+    <main class="nav_top">
         <div class="nav_guard">
             <i class="bi bi-arrow-left" @click="goBack"></i>
             <div class="date">
@@ -25,9 +25,9 @@ export default {
                 </div>
                 <!-- point counter-->
                 <div class="d-flex flex-row w-25 justify-content-around align-items-center">
-                    <input type="number" class="form-control" aria-label="Username" >
+                    <input type="number" class="form-control" aria-label="Username">
                     <span class="fs-4 m-2">/</span>
-                    <input type="number" class="form-control" aria-label="Server" >
+                    <input type="number" class="form-control" aria-label="Server">
                 </div>
             </div>
 
@@ -46,14 +46,14 @@ export default {
 
             <div class="nav-tabs">
                 <div class="d-flex flex-row  justify-content-start align-items-center">
-                    <i class="bi bi-slash-circle me-3 b_point bg-secondary" ></i>
+                    <i class="bi bi-slash-circle me-3 b_point bg-secondary"></i>
                     <span class="fs-5">Class</span>
                 </div>
                 <!-- point counter-->
                 <div class="d-flex flex-row w-25 justify-content-around align-items-center">
-                    <input type="number" class="form-control" aria-label="Username" >
+                    <input type="number" class="form-control" aria-label="Username">
                     <span class="fs-4 m-2">/</span>
-                    <input type="number" class="form-control" aria-label="Server" >
+                    <input type="number" class="form-control" aria-label="Server">
                 </div>
             </div>
 
@@ -66,15 +66,15 @@ export default {
                 </div>
                 <!-- point counter-->
                 <div class="d-flex flex-row w-25 justify-content-around align-items-center">
-                    <input type="number" class="form-control" aria-label="Username" >
+                    <input type="number" class="form-control" aria-label="Username">
                     <span class="fs-4 m-2">/</span>
-                    <input type="number" class="form-control" aria-label="Server" >
+                    <input type="number" class="form-control" aria-label="Server">
                 </div>
             </div>
         </div>
 
         <!-- bottom navigation -->
-        <div class="nav_guard">
+        <div class="nav_guard nav_footer">
             <div class="d-flex flex-column justify-center align-items-center">
                 <i class="bi bi-gear"></i>
                 <RouterLink to="/">Settings</RouterLink>
@@ -99,5 +99,26 @@ export default {
     border-radius: 100%;
 }
 
-@media (min-width: 1024px) {}
+/* md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 992px) {
+    .b_point {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    span {
+        font-size: 14px !important;
+    }
+
+    .nav-tabs div+div {
+        width: 45% !important;
+    }
+
+    input {
+        font-size: 10px;
+    }
+}
 </style>

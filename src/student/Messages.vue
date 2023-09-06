@@ -6,7 +6,7 @@ export default {
 
 <template>
     <!-- top navigation -->
-    <main>
+    <main class="nav_top">
         <div class="nav_guard">
             <i class="bi bi-arrow-left" @click="goBack"></i>
             <div class="date">
@@ -17,13 +17,13 @@ export default {
             </div>
             <div class="page_title">Messages</div>
         </div>
-        <div class="nav-tab">
+        <div class="nav-tab message">
             
             <div class="mt-3 fs-6 fw-lighter text-center">Coming Soon!</div>
         </div>
 
         <!-- bottom navigation -->
-        <div class="nav_guard">
+        <div class="nav_guard nav_footer">
 
             <div class="d-flex flex-column justify-center align-items-center">
                 <i class="bi bi-search"></i>

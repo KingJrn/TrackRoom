@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <form class="w-75">
+    <form class="w-75 login_form">
       <div class="mb-3 w-100">
         <label for="exampleInputEmail1" class="form-label">First name</label>
         <input
