@@ -38,28 +38,12 @@ export default {
                 <label for="exampleInputPassword1" class="form-label">Date of birth</label>
                 <input type="date" class="form-control" id="exampleInputPassword1" />
             </div>
-            <button type="submit" class="btn btn-primary mb-4">Update</button>
+            <button type="submit" class="btn btn-primary mb-4 w-100 p-2">Update</button>
         </form>
 
         <!-- bottom navigation -->
         <div class="nav_guard nav_footer">
-            <div class="d-flex flex-column justify-center align-items-center">
-                <i class="bi bi-gear"></i>
-                <RouterLink to="/">Settings</RouterLink>
-
-            </div>
-
-            <div class="d-flex flex-column justify-center align-items-center">
-                <i class="bi bi-x-circle-fill"></i>
-                <RouterLink to="/">Delete student</RouterLink>
-
-            </div>
-            <div class="d-flex flex-column justify-center align-items-center">
-                <i class="bi bi-x-circle"></i>
-                <RouterLink to="/">Delete student</RouterLink>
-
-            </div>
-
+            <div class="text-white">Techroom</div>
         </div>
     </main>
 </template>

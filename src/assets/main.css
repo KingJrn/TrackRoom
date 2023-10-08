@@ -3,24 +3,21 @@
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  /* height: 45rem; */
-
+  padding: 1rem;
   font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 a,
 .green {
   text-decoration: none !important;
-  color: hsla(160, 100%, 37%, 1);
+  color: var(--links-color);
   transition: 0.4s !important;
 }
 
-/* Light mode styles */
-.light-mode {
-  background-color: #fff;
-  color: #333;
-}
 /* General styles for the Main components */
 
 main {
@@ -34,8 +31,8 @@ main {
 
 .nav_guard {
   width: 100%;
-  height: 4rem;
-  background: var(--vt-c-indigo);
+  height: 4.5rem;
+  background: var( --accent-text-color);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -54,13 +51,21 @@ main {
   gap: 0.5rem;
 }
 
+.nav-tabs div {
+  font-weight: 400;
+  color: var(--primary-text-color);
+  + div {
+    font-style: italic;
+  }
+}
 i {
   font-size: 1.5rem;
+  color: var(--icon-color) !important;
 }
 
 i:hover {
   text-decoration: none !important;
-  color: hsla(160, 100%, 37%, 1);
+  color: var(--hover-complement);
   transition: 0.4s !important;
 }
 input {
@@ -73,17 +78,23 @@ input {
   justify-content: space-between;
   align-items: center;
   padding-block: 0.8rem;
-  border-color: rgba(235, 235, 235, 0.151);
+  border-color: var(--border-color);
 }
 
 .nav-tabs a {
   font-size: 1.3rem;
 }
+.error {
+  background-color: var(  --error);
+}
+
 /* end */
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2) !important;
+    background-color: var(--hover-background-color) !important;
+    color: var( --primary-text-color);
+    padding-inline: 4px 8px;
   }
 }
 
@@ -127,7 +138,9 @@ input {
   .nav_footer {
     position: fixed;
     bottom: 0px;
-    width: 94%;
+    width: 100%;
+    left: 0;
+    height: 30px;
   }
 }
 
@@ -135,8 +148,5 @@ input {
 @media (max-width: 767.98px) {
   .login_form {
     width: 100% !important;
-  }
-  .nav_footer {
-    width: 84%;
   }
 }

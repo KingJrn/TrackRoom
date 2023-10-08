@@ -39,9 +39,12 @@ nav {
   text-align: center;
   margin-top: 2rem;
 }
+.page-title {
+  color: var(--secondary-text-color);
+}
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  color: var(--primary-text-color);
 }
 
 nav a.router-link-exact-active:hover {
@@ -51,7 +54,7 @@ nav a.router-link-exact-active:hover {
 nav a {
   display: inline-block;
   padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+  border-left: 1px solid var(--border-color);
 }
 
 nav a:first-of-type {

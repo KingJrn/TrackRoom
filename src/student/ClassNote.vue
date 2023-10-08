@@ -28,19 +28,8 @@ export default {
         </div>
 
         <!-- bottom navigation -->
-        <div class="nav_guard nav_footer">
-
-            <div class="d-flex flex-column justify-center align-items-center">
-                <i class="bi bi-search"></i>
-                <RouterLink to="/">Search</RouterLink>
-
-            </div>
-            <div class="d-flex flex-column justify-center align-items-center">
-                <i class="bi bi-filetype-csv"></i>
-                <RouterLink to="/">Export CSV</RouterLink>
-
-            </div>
-
+    <div class="nav_guard nav_footer">
+            <div class="text-white">Techroom</div>
         </div>
     </main>
 </template>

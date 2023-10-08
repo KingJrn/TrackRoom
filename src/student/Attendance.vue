@@ -9,9 +9,11 @@ export default {
     <main class="nav_top">
         <div class="nav_guard">
             <i class="bi bi-arrow-left" @click="goBack"></i>
-            <div class="date">
-
-                <input type="date" class="rounded-2">
+            <div class="input-group input-group-sm w-50">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Select<i
+                        class="bi bi-arrow-right-short"></i></span>
+                <input type="date" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" />
             </div>
             <div class="page_title">Students</div>
         </div>
@@ -19,7 +21,7 @@ export default {
             <div class="nav-tabs">
                 <RouterLink to="/studentAttendance">
                     <div>Emmanuel Eze</div>
-                    <div class="fs-6 fw-lighter text-white">emmajr502@gmail.com</div>
+                    <div class="fs-6 fw-lighter">emmajr502@gmail.com</div>
                 </RouterLink>
                 <!-- present -->
                 <i class="bi bi-check-lg text-success"></i>
@@ -28,7 +30,7 @@ export default {
             <div class="nav-tabs">
                 <RouterLink to="/studentAttendance">
                     <div>Maxwell Skies</div>
-                    <div class="fs-6 fw-lighter text-white">emmajr502@yahoo.com</div>
+                    <div class="fs-6 fw-lighter">emmajr502@yahoo.com</div>
                 </RouterLink>
                 <!-- absent -->
                 <i class="bi bi-x-lg text-danger"></i>
@@ -44,18 +46,7 @@ export default {
 
         <!-- bottom navigation -->
         <div class="nav_guard nav_footer">
-            <div class="d-flex flex-column justify-center align-items-center">
-                <i class="bi bi-slash-circle"></i>
-                <RouterLink to="/">Clear all</RouterLink>
-
-
-            </div>
-
-            <div class="d-flex flex-column justify-center align-items-center">
-                <i class="bi bi-graph-up"></i>
-                <RouterLink to="/">Statistics</RouterLink>
-
-            </div>
+            <div class="text-white">Techroom</div>
         </div>
     </main>
 </template>

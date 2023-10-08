@@ -40,22 +40,7 @@ export default {
 
         <!-- bottom navigation -->
         <div class="nav_guard nav_footer">
-            <div class="d-flex flex-column justify-center align-items-center">
-                <i class="bi bi-gear"></i>
-                <RouterLink to="/">Settings</RouterLink>
-
-            </div>
-
-            <div class="d-flex flex-column justify-center align-items-center">
-                <i class="bi bi-list"></i>
-                <RouterLink to="/">School terms</RouterLink>
-
-            </div>
-            <div class="d-flex flex-column justify-center align-items-center">
-                <i class="bi bi-x-circle-fill"></i>
-                <RouterLink to="/">Delete class</RouterLink>
-
-            </div>
+            <div class="text-white">Techroom</div>
         </div>
     </main>
 </template>

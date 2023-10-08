@@ -10,8 +10,11 @@ export default {
     <main class="nav_top">
         <div class="nav_guard">
             <i class="bi bi-arrow-left" @click="goBack"></i>
-            <div class="date">
-                <input type="date" class="rounded-2" />
+            <div class="input-group input-group-sm w-50">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Select<i
+                        class="bi bi-arrow-right-short"></i></span>
+                <input type="date" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" />
             </div>
             <div class="page_title">Course Title</div>
         </div>
@@ -19,7 +22,7 @@ export default {
 
             <div class="nav-tabs">
                 <div class="d-flex flex-row  justify-content-start align-items-center">
-                    <i class="bi bi-slash-circle me-3 b_point bg-secondary"></i>
+                    <i class="bi bi-slash-circle me-3 b_point bg-secondary text-white"></i>
                     <!-- <span class="b_point text-bg-success  text-center text-white me-3">0</span> -->
                     <span class="fs-5">Daily homework</span>
                 </div>
@@ -46,7 +49,7 @@ export default {
 
             <div class="nav-tabs">
                 <div class="d-flex flex-row  justify-content-start align-items-center">
-                    <i class="bi bi-slash-circle me-3 b_point bg-secondary"></i>
+                    <i class="bi bi-slash-circle me-3 b_point bg-secondary text-white"></i>
                     <span class="fs-5">Class</span>
                 </div>
                 <!-- point counter-->
@@ -59,7 +62,7 @@ export default {
 
             <div class="nav-tabs">
                 <div class="d-flex flex-row  justify-content-start align-items-center">
-                    <i class="bi bi-slash-circle me-3 b_point bg-secondary"></i>
+                    <i class="bi bi-slash-circle me-3 b_point bg-secondary text-white"></i>
                     <!-- <span class="b_point text-bg-success  text-center text-white me-3">0</span>
                     <span class="b_point text-bg-danger text-center text-white me-3">0</span> -->
                     <span class="fs-5">Team project</span>
@@ -73,17 +76,9 @@ export default {
             </div>
         </div>
 
-        <!-- bottom navigation -->
-        <div class="nav_guard nav_footer">
-            <div class="d-flex flex-column justify-center align-items-center">
-                <i class="bi bi-gear"></i>
-                <RouterLink to="/">Settings</RouterLink>
-            </div>
-
-            <div class="d-flex flex-column justify-center align-items-center">
-                <i class="bi bi-arrows-move"></i>
-                <RouterLink to="/">Customize</RouterLink>
-            </div>
+              <!-- bottom navigation -->
+              <div class="nav_guard nav_footer">
+            <div class="text-white">Techroom</div>
         </div>
     </main>
 </template>

@@ -11,31 +11,19 @@ export default {
             <i class="bi bi-arrow-left" @click="goBack"></i>
             <div class="date">
                 <select class="form-select" aria-label="select example">
-                    <option value="1">2023-2024</option>
-                    <option value="2">2022-2023</option>
+                    <option value="1">Option</option>
                 </select>
             </div>
             <div class="page_title">Messages</div>
         </div>
         <div class="nav-tab message">
-            
+
             <div class="mt-3 fs-6 fw-lighter text-center">Coming Soon!</div>
         </div>
 
         <!-- bottom navigation -->
         <div class="nav_guard nav_footer">
-
-            <div class="d-flex flex-column justify-center align-items-center">
-                <i class="bi bi-search"></i>
-                <RouterLink to="/">Search</RouterLink>
-
-            </div>
-            <div class="d-flex flex-column justify-center align-items-center">
-                <i class="bi bi-filetype-csv"></i>
-                <RouterLink to="/">Export CSV</RouterLink>
-
-            </div>
-
+            <div class="text-white">Techroom</div>
         </div>
     </main>
 </template>

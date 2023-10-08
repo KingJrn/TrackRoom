@@ -21,28 +21,27 @@ export default {
             <div class="nav-tabs">
                 <RouterLink to="/summary">
                     <div>Emmanuel Eze</div>
-                    <div class="fs-6 fw-lighter text-white">emmajr502@gmail.com</div>
+                    <div class="fs-6 fw-lighter">emmajr502@gmail.com</div>
                 </RouterLink>
                 <i class="bi bi-chevron-right"></i>
             </div>
             <div class="nav-tabs">
                 <RouterLink to="/summary">
                     <div>Maxwell Skies</div>
-                    <div class="fs-6 fw-lighter text-white">emmajr502@yahoo.com</div>
+                    <div class="fs-6 fw-lighter">emmajr502@yahoo.com</div>
                 </RouterLink>
                 <i class="bi bi-chevron-right"></i>
             </div>
-            <div class="mt-3 fs-6 fw-lighter">2 students</div>
+            <div class="mt-3 d-flex gap-3">
+                <div class=" fs-6 fw-lighter">2 students</div>
+                <div class="fst-italic fs-6 fw-lighter">- tap student to view </div>
+            </div>
+            
+
         </div>
 
-        <!-- bottom navigation -->
         <div class="nav_guard nav_footer">
-            <div class="d-flex flex-column justify-center align-items-center">
-                <i class="bi bi-sort-alpha-down"></i>
-                <RouterLink to="/">Sort</RouterLink>
-
-
-            </div>
+            <div class="text-white">Techroom</div> 
         </div>
     </main>
 </template>

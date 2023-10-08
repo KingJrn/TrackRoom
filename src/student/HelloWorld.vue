@@ -35,7 +35,8 @@ h3 {
   text-align: center;
 }
 h3 a{
-  color: hsla(160, 100%, 37%, 1) !important ;
+  color:var(--accent-text-color)!important;
+  line-height: 30px;
 }
 @media (min-width: 1024px) {
   .greetings h1,

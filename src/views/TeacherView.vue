@@ -38,49 +38,49 @@ export default {
         <div class="nav-tab">
             <div class="nav-tabs">
                 <RouterLink to="/studentreport">
-                    <i class="bi bi-bar-chart text-light"></i>
+                    <i class="bi bi-bar-chart "></i>
                     <span class="ms-3">Student report</span>
                 </RouterLink>
                 <i class="bi bi-chevron-right"></i>
             </div>
             <div class="nav-tabs">
                 <RouterLink to="/student">
-                    <i class="bi bi-mortarboard text-light"></i>
+                    <i class="bi bi-mortarboard"></i>
                     <span class="ms-3">Students</span>
                 </RouterLink>
                 <i class="bi bi-chevron-right"></i>
             </div>
             <div class="nav-tabs">
                 <RouterLink to="/activity">
-                    <i class="bi bi-stopwatch text-light"></i>
+                    <i class="bi bi-stopwatch"></i>
                     <span class="ms-3">Time activity</span>
                 </RouterLink>
                 <i class="bi bi-chevron-right"></i>
             </div>
             <div class="nav-tabs">
                 <RouterLink to="/attendance">
-                    <i class="bi bi-person-check-fill text-light"></i>
+                    <i class="bi bi-person-check-fill"></i>
                     <span class="ms-3">Attendance</span>
                 </RouterLink>
                 <i class="bi bi-chevron-right"></i>
             </div>
             <div class="nav-tabs">
                 <RouterLink to="/classnote">
-                    <i class="bi bi-journal-code text-light"></i>
+                    <i class="bi bi-journal-code"></i>
                     <span class="ms-3">Class notes</span>
                 </RouterLink>
                 <i class="bi bi-chevron-right"></i>
             </div>
             <div class="nav-tabs">
                 <RouterLink to="/messages">
-                    <i class="bi bi-chat-left text-light"></i>
+                    <i class="bi bi-chat-left"></i>
                     <span class="ms-3">Messages</span>
                 </RouterLink>
                 <i class="bi bi-chevron-right"></i>
             </div>
             <div class="nav-tabs">
                 <RouterLink to="/grading">
-                    <i class="bi bi-pass text-light"></i>
+                    <i class="bi bi-pass"></i>
                     <span class="ms-3">Grading</span>
                 </RouterLink>
                 <i class="bi bi-chevron-right"></i>
@@ -88,14 +88,14 @@ export default {
 
             <div class="nav-tabs">
                 <RouterLink to="/behaviour">
-                    <i class="bi bi-people text-white"></i>
+                    <i class="bi bi-people"></i>
                     <span class="ms-3"> Behavior points</span>
                 </RouterLink>
                 <i class="bi bi-chevron-right"></i>
             </div>
             <div class="nav-tabs">
                 <RouterLink to="/calendar">
-                    <i class="bi bi-calendar text-light"></i>
+                    <i class="bi bi-calendar"></i>
                     <span class="ms-3">Calendar</span>
                 </RouterLink>
                 <i class="bi bi-chevron-right"></i>
@@ -105,24 +105,7 @@ export default {
         <!-- bottom navigation -->
 
         <div class="nav_guard nav_footer">
-            <div class="d-flex flex-column justify-center align-items-center">
-                <i class="bi bi-person"></i>
-                <RouterLink to="/">My account</RouterLink>
-
-
-            </div>
-
-            <div class="d-flex flex-column justify-center align-items-center">
-                <i class="bi bi-gear"></i>
-                <RouterLink to="/">Settings</RouterLink>
-
-            </div>
-            <div class="d-flex flex-column justify-center align-items-center">
-                <i class="bi bi-person-fill-add"></i>
-                <RouterLink to="/">Add class</RouterLink>
-
-            </div>
-
+            <div class="text-white">Techroom</div>
         </div>
 
     </main>

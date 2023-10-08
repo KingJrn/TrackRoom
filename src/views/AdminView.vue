@@ -21,7 +21,7 @@ export default {
         <div class="nav-tab">
             <div class="nav-tabs">
                 <RouterLink to="/schoolcalandar">
-                    <i class="bi bi-calendar-week text-white"></i>
+                    <i class="bi bi-calendar-week"></i>
                     <span class="ms-3">School calender</span>
                 </RouterLink>
                 <i class="bi bi-chevron-right"></i>
@@ -38,19 +38,8 @@ export default {
         </div>
 
         <!-- bottom navigation -->
-        <div class="nav_guard">
-            <div class="d-flex flex-column justify-center align-items-center">
-                <i class="bi bi-person"></i>
-                <RouterLink to="/">My account</RouterLink>
-
-            </div>
-
-            <div class="d-flex flex-column justify-center align-items-center">
-                <i class="bi bi-gear"></i>
-                <RouterLink to="/">Settings</RouterLink>
-
-            </div>
-
+        <div class="nav_guard nav_footer">
+            <div class="text-white">Techroom</div>
         </div>
     </main>
 </template>
