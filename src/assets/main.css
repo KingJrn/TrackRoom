@@ -68,6 +68,9 @@ i:hover {
   color: var(--hover-complement);
   transition: 0.4s !important;
 }
+label,.modal-title  {
+  color: var(--secondary-background-color);
+}
 input {
   font-size: 15px !important;
 }
@@ -87,7 +90,13 @@ input {
 .error {
   background-color: var(  --error);
 }
-
+.page_title {
+  cursor: default;
+  text-decoration: underline;
+}
+.form-select {
+  font-size: 15px !important;
+}
 /* end */
 
 @media (hover: hover) {
