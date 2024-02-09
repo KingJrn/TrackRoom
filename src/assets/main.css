@@ -85,7 +85,7 @@ input {
 }
 
 .nav-tabs a {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .error {
   background-color: var(  --error);
@@ -100,10 +100,11 @@ input {
 /* end */
 
 @media (hover: hover) {
-  a:hover {
+  .nav-tabs a:hover {
     background-color: var(--hover-background-color) !important;
     color: var( --primary-text-color);
-    padding-inline: 4px 8px;
+    padding: 5px 10px;
+    border-radius: 4px;
   }
 }
 
